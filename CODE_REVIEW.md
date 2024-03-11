@@ -17,9 +17,13 @@ Here some suggestions for the `signup.py` file (this list does not pretend to be
     - Check is a valid email address, a first approach can be implemented using a RegEx.
     - Age should be an integer.
     - User type must be in the set (user, staff, admin).
-6. After implementing the validations, the `process_form` function can be refactored to avoid duplicated code.
+6. After implementing the validations, the `process_form` function can be refactored to avoid duplicated code (**DRY**).
    At this point `formvars['usertype']` should only hold a valid user type - (user inputs were validated), so no need for those `if/else` statements.
-   Now, it can simply call the insert function and add the arguments. More processing on the data can be made in this function.
+   Now, it can simply call the insert function and add the arguments. More processing on the data can be made in this function if required.
 7. Add error handling for DB insert function call in `Processor#process_form`.
 8. Remove returns from `Pages#thankyou_page` and from `Processor#process_form` as they are useless at this point (**YAGNI**, **KISS**).
 9. Follow the snake_case naming convention. For example, `signupform_page` should be `signup_form_page`.
+
+Here some suggestions for the `test.py` file (this list does not pretend to be exhaustive):
+
+-- TODO --
