@@ -1,7 +1,7 @@
 # Site Management System
 
 - System Design Document: https://github.com/devaldana/sites/blob/master/design_notes.pdf
-- Sequence diagram: https://t.ly/site-management-system-sequence-diagram
+- Sequence diagram: https://tinyurl.com/sms-sequence-diagram
 - ER diagram: https://drawsql.app/teams/davids-team-51/diagrams/files
 
 
